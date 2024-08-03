@@ -21,7 +21,7 @@ export default function Earth() {
                 muted={true}
             />
             <source src="/videos/earth.mp4" type="video/mp4" />
-            <h3 className="text-5xl sm:text-6xl font-bold text-white">War of Worlds</h3>
+            <h3 className="text-5xl sm:text-6xl font-bold text-white">The Purge</h3>
         </div>
     )
 }
