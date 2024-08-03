@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@pythnetwork/entropy-sdk-solidity':
+        specifier: ^1.5.0
+        version: 1.5.0
       '@radix-ui/react-dialog':
         specifier: ^1.1.1
         version: 1.1.1(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -1219,6 +1222,9 @@ packages:
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
+
+  '@pythnetwork/entropy-sdk-solidity@1.5.0':
+    resolution: {integrity: sha512-ZZti5BLURe4w0HtCwy2qGJayOtAcWjjfpnUsar6fHZPG2SkC3jfj13m9WBJKLk87T1ZaSpazAdb22pm6MXG8qg==}
 
   '@radix-ui/primitive@1.1.0':
     resolution: {integrity: sha512-4Z8dn6Upk0qk4P74xBhZ6Hd/w0mPEzOOLxy4xiPXOXqjF7jZS0VAKk7/x/H6FyY2zCkYJqePf1G5KmkmNJ4RBA==}
@@ -6539,6 +6545,8 @@ snapshots:
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
+
+  '@pythnetwork/entropy-sdk-solidity@1.5.0': {}
 
   '@radix-ui/primitive@1.1.0': {}
 

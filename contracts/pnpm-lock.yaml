@@ -8,15 +8,23 @@ importers:
 
   .:
     dependencies:
+      '@pythnetwork/entropy-sdk-solidity':
+        specifier: ^1.5.0
+        version: 1.5.0
       '@pythnetwork/pyth-sdk-solidity':
         specifier: ^3.1.0
         version: 3.1.0
 
 packages:
 
+  '@pythnetwork/entropy-sdk-solidity@1.5.0':
+    resolution: {integrity: sha512-ZZti5BLURe4w0HtCwy2qGJayOtAcWjjfpnUsar6fHZPG2SkC3jfj13m9WBJKLk87T1ZaSpazAdb22pm6MXG8qg==}
+
   '@pythnetwork/pyth-sdk-solidity@3.1.0':
     resolution: {integrity: sha512-NgtEPUTL9r0qqMpIOEtSdUVjrF08fHK6wa7eM8hdjhjzMOti4o053B9oFqpm4lkzJW6eELXuP4sRJOABGmNTUg==}
 
 snapshots:
+
+  '@pythnetwork/entropy-sdk-solidity@1.5.0': {}
 
   '@pythnetwork/pyth-sdk-solidity@3.1.0': {}

@@ -1,5 +1,5 @@
 import { getDefaultConfig } from "@rainbow-me/rainbowkit";
-import { optimism, base, mode, sepolia } from "wagmi/chains";
+import { optimism, base, mode, optimismSepolia } from "wagmi/chains";
 
 export const config = getDefaultConfig({
   appName: "Random Muse App",
@@ -8,7 +8,9 @@ export const config = getDefaultConfig({
     optimism,
     mode,
     base,
-    ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS === "true" ? [sepolia] : []),
+    ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS === "true"
+      ? [optimismSepolia]
+      : []),
   ],
   ssr: true,
 });
