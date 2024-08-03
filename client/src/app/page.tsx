@@ -1,13 +1,4 @@
 import GeneratePromptPage from "@/components/generate-prompt";
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-  CardContent,
-} from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 
