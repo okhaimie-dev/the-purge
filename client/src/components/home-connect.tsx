@@ -15,7 +15,7 @@ export default function HomeConnect() {
             //mock account profile
             setProfile(undefined);
             setTimeout(() => {
-                router.push("/world");
+                router.push("/create-account");
             }, 2000);
         }, 3000);
     }
