@@ -19,7 +19,7 @@ export default function CreateAccount() {
                 <div className="w-full sm:w-[500px] h-fit border-2 border-white/50 rounded-lg flex flex-col items-center p-5 space-y-3.5">
                     <div className="hover:cursor-pointer" onClick={() => ref.current?.click()}>
                         {
-                            profileImage ? <Image src={profileImage} alt="profile" className="w-40 h-40 border-2 border-white/50 rounded-full" />
+                            profileImage ? <Image src={profileImage} width={50} height={50} alt="profile" className="w-40 h-40 border-2 border-white/50 rounded-full" />
                                 : <div className="w-40 h-40 border-2 border-white/50 rounded-full flex flex-col items-center justify-center">
                                     <p className="text-white">Click to set photo</p>
                                 </div>
