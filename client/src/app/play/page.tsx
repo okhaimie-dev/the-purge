@@ -1,6 +1,6 @@
-// import Header from "@/components/header";
 import Image from "next/image";
-import { Bars2Icon } from "@heroicons/react/16/solid"
+import Link from "next/link";
+import Menu from "@/components/menu";
 
 export default function Play() {
     return (
@@ -9,10 +9,10 @@ export default function Play() {
                 {/* <Header /> */}
                 <div className="w-full md:w-fit h-full max-h-[85vh] overflow-y-scroll absolute top-10 bg-gradient-to-br from-white via-transparent to-white rounded-xl p-0.5 hide-scrollbar">
                     <div className="bg-black rounded-t-xl flex flex-row items-center justify-between pr-2.5 pt-1.5">
-                        <p className="text-3xl font-bold text-white p-1.5 ">The Purge</p>
-                        <button className="border-2 border-white rounded-md p-1.5">
-                            <Bars2Icon className="w-6 h-6 text-white" />
-                        </button>
+                        <Link href={"/"}>
+                            <p className="text-3xl font-bold text-white p-1.5 ">The Purge</p>
+                        </Link>
+                        <Menu />
                     </div>
                     <div className="w-fit bg-black rounded-b-xl">
                         <div className="w-fit">
