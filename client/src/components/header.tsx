@@ -1,20 +1,18 @@
 'use client'
 
-import Image from "next/image";
-import { Button } from "./ui/button";
 import Link from "next/link";
-import { useAccount, useEnsAvatar, useEnsName, useDisconnect } from "wagmi";
+import { useAccount, useDisconnect } from "wagmi";
 import { useModal, Avatar } from "connectkit";
 
 export default function Header() {
-    const { address, avatar } = useAccount();
+    const { address } = useAccount();
     const account = useAccount();
     const { setOpen } = useModal();
     const { disconnect } = useDisconnect();
     console.log(account)
     return (
         <div className="fixed h-20 backdrop-blur-3xl bg-transparent/10 w-[360px] sm:w-[600px] top-10 rounded-l-full rounded-r-full px-2.5
-        flex flex-col items-center justify-center bg-gradient-to-br from-white via-transparent to-white">
+        flex flex-col items-center justify-center bg-gradient-to-br from-white via-transparent to-white z-20">
             <div className="flex flex-row items-center justify-between w-full">
                 <Link href={"/"}>
                     <h3 className="text-3xl text-white font-bold">PURGE</h3>
