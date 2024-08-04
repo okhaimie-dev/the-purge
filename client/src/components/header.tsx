@@ -9,7 +9,6 @@ export default function Header() {
     const account = useAccount();
     const { setOpen } = useModal();
     const { disconnect } = useDisconnect();
-    console.log(account)
     return (
         <div className="fixed h-20 backdrop-blur-3xl bg-transparent/10 w-[360px] sm:w-[600px] top-10 rounded-l-full rounded-r-full px-2.5
         flex flex-col items-center justify-center bg-gradient-to-br from-white via-transparent to-white z-20">
@@ -19,7 +18,7 @@ export default function Header() {
                 </Link>
                 {
                     address ? <button onClick={() => disconnect()} className="flex flex-row items-center">
-                        <Avatar address={address} size={70} />
+                        <Avatar address={address} size={65} />
                     </button> : <button className="border-2 border-white bg-transparent text-white p-2.5 rounded-lg" onClick={() => setOpen(true)}>Connect wallet to play</button>
                 }
             </div>
