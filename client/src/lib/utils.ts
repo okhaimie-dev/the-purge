@@ -6,8 +6,8 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function truncateString(str: string, num: number) {
-  if (str.length <= num) {
+  if (str?.length <= num) {
     return str
   }
-  return str.slice(0, num) + "..." + str.slice(-num)
+  return str?.slice(0, num) + "..." + str?.slice(-num)
 }
