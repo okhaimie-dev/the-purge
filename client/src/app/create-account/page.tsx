@@ -12,7 +12,7 @@ export default function CreateAccount() {
         <div className="w-full min-h-screen bg-black flex flex-col items-center justify-center">
             <div className="flex flex-col items-center justify-center space-y-5">
                 <h1 className="text-5xl sm:text-6xl font-bold text-white">Create account</h1>
-                <div className="w-[500px] h-fit border-2 border-white/50 rounded-lg flex flex-col items-center p-5 space-y-3.5">
+                <div className="w-full sm:w-[500px] h-fit border-2 border-white/50 rounded-lg flex flex-col items-center p-5 space-y-3.5">
                     <div className="hover:cursor-pointer" onClick={() => ref.current?.click()}>
                         {
                             profileImage ? <img src={profileImage} alt="profile" className="w-40 h-40 border-2 border-white/50 rounded-full" />
