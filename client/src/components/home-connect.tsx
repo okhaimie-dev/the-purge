@@ -7,10 +7,10 @@ import { useRouter } from "next/navigation"
 
 export default function HomeConnect() {
     const { setOpen } = useModal();
-    const account = useAccount();
+    const { address } = useAccount();
     const [profile, setProfile] = useState<{} | undefined>({});
     const router = useRouter();
-    if (account) {
+    if (address) {
         setTimeout(() => {
             //mock account profile
             setProfile(undefined);
@@ -22,7 +22,7 @@ export default function HomeConnect() {
     return (
         <>
             {
-                account ? <button className="border-2 border-white bg-transparent text-white p-2.5 rounded-lg">{profile === undefined ? "Account not found, redirecting..." : "Checking for account..."}</button>
+                address ? <button className="border-2 border-white bg-transparent text-white p-2.5 rounded-lg">{profile === undefined ? "Account not found, redirecting..." : "Checking for account..."}</button>
                     : <button className="border-2 border-white bg-transparent text-white p-2.5 rounded-lg" onClick={() => setOpen(true)}>Connect wallet to play</button>
             }
         </>
