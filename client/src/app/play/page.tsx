@@ -18,7 +18,7 @@ export default function Play() {
                         <div className="w-fit">
                             <div className="p-2.5 space-y-2.5 w-fit">
                                 {
-                                    Array.from({ length: 10 }).map((_, i) => <div className="bg-black w-fit h-fit bg-gradient-to-br from-white via-transparent to-white rounded-xl p-0.5">
+                                    Array.from({ length: 10 }).map((_, i) => <div key={i} className="bg-black w-fit h-fit bg-gradient-to-br from-white via-transparent to-white rounded-xl p-0.5">
                                         <div className="bg-black w-fit h-full rounded-xl py-3.5 px-7 flex flex-col items-start justify-center">
                                             <div className="space-y-2.5">
                                                 <div className="flex flex-row items-center justify-center sm:space-x-5">

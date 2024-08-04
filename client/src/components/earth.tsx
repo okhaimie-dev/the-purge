@@ -3,6 +3,7 @@
 import ReactPlayer from "react-player";
 
 export default function Earth() {
+    if (typeof window === "undefined") return null;
     const w_70 = window.innerWidth * 0.70;
     const h_70 = window.innerHeight * 0.70;
     return (
