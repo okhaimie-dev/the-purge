@@ -1,6 +1,7 @@
-// import GeneratePromptPage from "@/components/generate-prompt";
+"use client"
 
 import Earth from "@/components/earth";
+import { ConnectKitButton } from "connectkit";
 
 // import { ConnectButton } from "@rainbow-me/rainbowkit";
 
@@ -14,6 +15,7 @@ export default function Home() {
         <GeneratePromptPage /> */}
         <Earth />
         <button className="border-2 border-white bg-transparent text-white p-2.5 rounded-lg">Connect wallet to play</button>
+        <ConnectKitButton />
       </div>
     </main>
   );
